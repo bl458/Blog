@@ -3,3 +3,8 @@
   width: 100vw;
   background-color: yellow;
 }
+
+.sidebar {
+  width: 10vw;
+  background-color: green;
+}
