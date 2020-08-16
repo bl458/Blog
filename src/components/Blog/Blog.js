@@ -1,40 +1,9 @@
 import React, { useState, useEffect } from "react";
-import styled from "styled-components";
 import { push as Menu } from "react-burger-menu";
 import { BrowserRouter as Routes, Route } from "react-router-dom";
 
 import "../styles.css";
-
-const Container = styled.div`
-  height: 100vh;
-  width: 100vw;
-  padding: 0;
-  margin: 0;
-`;
-
-const MainContainer = styled.div`
-  text-align: center;
-  align-self: flex-end;
-  width: ${(props) => (props.menuOpen ? props.changedWidth + "%" : "100%")};
-  position: absolute;
-  top: 36px;
-`;
-
-const Title = styled.h1`
-  margin-top: 0;
-`;
-
-const SmallLink = styled.a`
-  &:link,
-  &:visited,
-  &:active {
-    text-decoration: none;
-    color: rgb(68, 121, 178);
-  }
-  &:hover {
-    color: burlywood;
-  }
-`;
+import { Container, MainContainer, Title, SmallLink } from "../styles";
 
 function getWindowDim() {
   const { innerWidth: width, innerHeight: height } = window;
