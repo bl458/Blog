@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import { push as Menu } from "react-burger-menu";
+import { BrowserRouter as Routes, Route } from "react-router-dom";
 
 import "../styles.css";
 
@@ -21,6 +22,18 @@ const MainContainer = styled.div`
 
 const Title = styled.h1`
   margin-top: 0;
+`;
+
+const SmallLink = styled.a`
+  &:link,
+  &:visited,
+  &:active {
+    text-decoration: none;
+    color: rgb(68, 121, 178);
+  }
+  &:hover {
+    color: burlywood;
+  }
 `;
 
 function getWindowDim() {
@@ -72,7 +85,21 @@ const Blog = () => {
         changedWidth={((windowDim.width - 300) / windowDim.width) * 100}
       >
         <Title>Byungchan Lim</Title>
+        <p>
+          contact:{" "}
+          <SmallLink href="mailto: b458@cornell.edu">
+            bl458@cornell.edu
+          </SmallLink>{" "}
+          | github: <SmallLink href="/git">https://github.com/bl458/</SmallLink>
+        </p>
       </MainContainer>
+
+      <Routes>
+        <Route
+          path="/git"
+          component={() => (window.location = "https://github.com/bl458/")}
+        />
+      </Routes>
     </Container>
   );
 };
