@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { push as Menu } from "react-burger-menu";
 import { BrowserRouter as Routes, Route } from "react-router-dom";
 
 import "../styles.css";
 import { Container, MainContainer, Title, SmallLink } from "../styles";
+import Navbar from "./Navbar";
 
 function getWindowDim() {
   const { innerWidth: width, innerHeight: height } = window;
@@ -30,23 +30,7 @@ const Blog = () => {
 
   return (
     <Container>
-      <Menu
-        noOverlay
-        isOpen
-        pageWrapId={"page-wrap"}
-        onStateChange={handleMenuChange}
-        width={300}
-      >
-        <a id="home" href="/">
-          Home
-        </a>
-        <a id="about" href="/about">
-          About
-        </a>
-        <a id="contact" href="/contact">
-          Projects
-        </a>
-      </Menu>
+      <Navbar handleMenuChange={handleMenuChange} />
 
       <MainContainer
         id="page-wrap"
