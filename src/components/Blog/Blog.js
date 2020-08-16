@@ -3,7 +3,7 @@ import { BrowserRouter as Routes, Route } from "react-router-dom";
 
 import { Container, MainContainer, Title, SmallLink } from "../styles";
 import { getWindowDim } from "../../helper/general";
-import Navbar from "./Navbar";
+import Navbar from "./Navbar/Navbar";
 
 const Blog = () => {
   const [windowDim, setWindowDim] = useState(getWindowDim());
