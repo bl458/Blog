@@ -25,6 +25,10 @@ const Title = styled.h1`
   margin-top: 0;
 `;
 
+const TitleSub = styled.h2`
+  margin-top: 0;
+`;
+
 const SmallLink = styled.a`
   &:link,
   &:visited,
@@ -37,4 +41,4 @@ const SmallLink = styled.a`
   }
 `;
 
-export { Container, MainContainer, SubContainer, Title, SmallLink };
+export { Container, MainContainer, SubContainer, Title, TitleSub, SmallLink };

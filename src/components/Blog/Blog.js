@@ -6,6 +6,7 @@ import {
   SubContainer,
   MainContainer,
   Title,
+  TitleSub,
   SmallLink,
 } from "../styles";
 import { getWindowDim } from "../../helper/general";
@@ -45,7 +46,11 @@ const Blog = () => {
         </p>
 
         <SubContainer>
-          <Title>About</Title>
+          <TitleSub>About</TitleSub>
+          <p>
+            Studying Computer Science, I am mainly interested in frontend web
+            and mobile development.
+          </p>
         </SubContainer>
       </MainContainer>
 
