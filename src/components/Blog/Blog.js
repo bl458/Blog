@@ -1,7 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Routes, Route } from "react-router-dom";
 
-import { Container, MainContainer, Title, SmallLink } from "../styles";
+import {
+  Container,
+  SubContainer,
+  MainContainer,
+  Title,
+  SmallLink,
+} from "../styles";
 import { getWindowDim } from "../../helper/general";
 import Navbar from "./Navbar/Navbar";
 
@@ -37,6 +43,10 @@ const Blog = () => {
           </SmallLink>{" "}
           | github: <SmallLink href="/git">github.com/bl458</SmallLink>
         </p>
+
+        <SubContainer>
+          <Title>About</Title>
+        </SubContainer>
       </MainContainer>
 
       <Routes>

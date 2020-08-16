@@ -15,6 +15,10 @@ const MainContainer = styled.div`
   top: 36px;
 `;
 
+const SubContainer = styled.div`
+  text-align: left;
+`;
+
 const Title = styled.h1`
   margin-top: 0;
 `;
@@ -31,4 +35,4 @@ const SmallLink = styled.a`
   }
 `;
 
-export { Container, MainContainer, Title, SmallLink };
+export { Container, MainContainer, SubContainer, Title, SmallLink };
