@@ -14,15 +14,14 @@ const Container = styled.div`
 const MainContainer = styled.div`
   text-align: center;
   align-self: flex-end;
-  width: ${(props) => (props.menuOpen ? "calc((100vw-)/100vw*100)" : "100%")};
-  background-color: red;
+  width: ${(props) => (props.menuOpen ? props.changedWidth + "%" : "100%")};
 `;
 
 const Title = styled.h1`
   margin-top: 0;
 `;
 
-function getWindowDimensions() {
+function getWindowDim() {
   const { innerWidth: width, innerHeight: height } = window;
   return {
     width,
@@ -31,17 +30,15 @@ function getWindowDimensions() {
 }
 
 const Blog = () => {
-  const [windowDimensions, setWindowDimensions] = useState(
-    getWindowDimensions()
-  );
+  const [windowDim, setWindowDim] = useState(getWindowDim());
   const [menuOpen, setMenuOpen] = useState(true);
 
   const handleMenuChange = (state) => setMenuOpen(state.isOpen);
 
   useEffect(() => {
-    function handleResize() {
-      setWindowDimensions(getWindowDimensions());
-    }
+    const handleResize = () => {
+      setWindowDim(getWindowDim());
+    };
 
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
@@ -54,6 +51,7 @@ const Blog = () => {
         isOpen
         pageWrapId={"page-wrap"}
         onStateChange={handleMenuChange}
+        width={300}
       >
         <a id="home" href="/">
           Home
@@ -66,7 +64,11 @@ const Blog = () => {
         </a>
       </Menu>
 
-      <MainContainer id="page-wrap" menuOpen={menuOpen}>
+      <MainContainer
+        id="page-wrap"
+        menuOpen={menuOpen}
+        changedWidth={((windowDim.width - 300) / windowDim.width) * 100}
+      >
         <Title>Title</Title>
       </MainContainer>
     </Container>
