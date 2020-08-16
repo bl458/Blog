@@ -35,7 +35,7 @@ const Blog = () => {
           <SmallLink href="mailto: b458@cornell.edu">
             bl458@cornell.edu
           </SmallLink>{" "}
-          | github: <SmallLink href="/git">https://github.com/bl458/</SmallLink>
+          | github: <SmallLink href="/git">github.com/bl458</SmallLink>
         </p>
       </MainContainer>
 
