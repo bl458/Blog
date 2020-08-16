@@ -15,6 +15,8 @@ const MainContainer = styled.div`
   text-align: center;
   align-self: flex-end;
   width: ${(props) => (props.menuOpen ? props.changedWidth + "%" : "100%")};
+  position: absolute;
+  top: 36px;
 `;
 
 const Title = styled.h1`
