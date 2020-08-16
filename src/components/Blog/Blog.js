@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Routes, Route } from "react-router-dom";
 
-import "../styles.css";
 import { Container, MainContainer, Title, SmallLink } from "../styles";
 import { getWindowDim } from "../../helper/general";
 import Navbar from "./Navbar";
