@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
+import styled from "styled-components";
 import { push as Menu } from "react-burger-menu";
 
 import "../styles.css";
-import styled from "styled-components";
 
 const Container = styled.div`
   height: 100vh;
@@ -71,7 +71,7 @@ const Blog = () => {
         menuOpen={menuOpen}
         changedWidth={((windowDim.width - 300) / windowDim.width) * 100}
       >
-        <Title>Title</Title>
+        <Title>Byungchan Lim</Title>
       </MainContainer>
     </Container>
   );
