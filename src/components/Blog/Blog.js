@@ -6,7 +6,17 @@ import "../styles.css";
 const Blog = () => {
   return (
     <div className="container">
-      <Menu></Menu>
+      <Menu>
+        <a id="home" className="menu-item" href="/">
+          Home
+        </a>
+        <a id="about" className="menu-item" href="/about">
+          About
+        </a>
+        <a id="contact" className="menu-item" href="/contact">
+          Projects
+        </a>
+      </Menu>
     </div>
   );
 };

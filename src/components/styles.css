@@ -66,3 +66,12 @@
 .bm-overlay {
   background: rgba(0, 0, 0, 0.3);
 }
+
+.menu-item {
+  color: #b8b7ad;
+  font-size: larger;
+  display: block;
+  margin-bottom: 5vh;
+  text-decoration: none;
+  outline: none;
+}
