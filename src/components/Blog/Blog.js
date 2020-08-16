@@ -1,22 +1,32 @@
 import React from "react";
-import { bubble as Menu } from "react-burger-menu";
+import { push as Menu } from "react-burger-menu";
 
 import "../styles.css";
 
 const Blog = () => {
   return (
     <div className="container">
-      <Menu>
-        <a id="home" className="menu-item" href="/">
+      <Menu
+        noOverlay
+        isOpen
+        pageWrapId={"page-wrap"}
+        outerContainerId={"container"}
+      >
+        <a id="home" href="/">
           Home
         </a>
-        <a id="about" className="menu-item" href="/about">
+        <a id="about" href="/about">
           About
         </a>
-        <a id="contact" className="menu-item" href="/contact">
+        <a id="contact" href="/contact">
           Projects
         </a>
       </Menu>
+
+      <div id="page-wrap" className="main">
+        <div className="header"></div>
+        <h1 className="title">Title</h1>
+      </div>
     </div>
   );
 };

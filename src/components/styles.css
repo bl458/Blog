@@ -1,14 +1,25 @@
 .container {
   height: 100vh;
   width: 100vw;
+  padding: 0;
+  margin: 0;
 }
 
+.main {
+  text-align: center;
+}
+
+.title {
+  margin-top: 0;
+}
+
+/* Sidebar */
 /* Position and sizing of burger button */
 .bm-burger-button {
   position: fixed;
   width: 36px;
   height: 30px;
-  left: 36px;
+  right: 36px;
   top: 36px;
 }
 
@@ -26,11 +37,6 @@
 .bm-cross-button {
   height: 24px;
   width: 24px;
-}
-
-/* Color/shape of close button cross */
-.bm-cross {
-  background: #bdc3c7;
 }
 
 /* Sidebar wrapper styles*/
@@ -53,25 +59,15 @@
 
 /* Wrapper for item list */
 .bm-item-list {
-  color: #b8b7ad;
   padding: 0.8em;
 }
 
 /* Individual item */
 .bm-item {
-  display: inline-block;
-}
-
-/* Styling of overlay */
-.bm-overlay {
-  background: rgba(0, 0, 0, 0.3);
-}
-
-.menu-item {
-  color: #b8b7ad;
-  font-size: larger;
   display: block;
   margin-bottom: 5vh;
+  color: #b8b7ad;
+  font-size: larger;
   text-decoration: none;
   outline: none;
 }
