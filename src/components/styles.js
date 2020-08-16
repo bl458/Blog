@@ -13,6 +13,8 @@ const MainContainer = styled.div`
   width: ${(props) => (props.menuOpen ? props.changedWidth + "%" : "100%")};
   position: absolute;
   top: 36px;
+  left: 36px;
+  right: 36px;
 `;
 
 const SubContainer = styled.div`
