@@ -48,9 +48,37 @@ const Blog = () => {
         <SubContainer>
           <TitleSub>About</TitleSub>
           <p>
-            Studying Computer Science, I am mainly interested in frontend web
-            and mobile development.
+            Studying Computer Science, I specialize in frontend web and mobile
+            development. As someone who is passionate about learning new things,
+            I am deeply interested in machine learning and deep learning,
+            specifically natural language processing and image recognition.
+            <br />
+            <br />
+            My hobbies are playing the piano and watching anime. I also follow
+            international musical competitions such as the Chopin and
+            Tchaikovsky competition and am currently learning japanese.
           </p>
+        </SubContainer>
+
+        <SubContainer>
+          <TitleSub>Skills</TitleSub>
+          <ul>
+            <li>Java</li>
+            <li>Python</li>
+            <li>React</li>
+            <li>React Native</li>
+            <li>NodeJS</li>
+            <li>MySQL</li>
+            <li>Typescript</li>
+          </ul>
+        </SubContainer>
+
+        <SubContainer>
+          <TitleSub>Projects</TitleSub>
+          <ul>
+            <li>MataMata (Website for Japanese learners)</li>
+            <li>Cornell Electric</li>
+          </ul>
         </SubContainer>
       </MainContainer>
 
