@@ -17,6 +17,9 @@ const Navbar = ({ handleMenuChange }) => (
     <a id="about" href="/about">
       About
     </a>
+    <a id="about" href="/about">
+      Skills
+    </a>
     <a id="contact" href="/contact">
       Projects
     </a>
