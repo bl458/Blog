@@ -34,7 +34,10 @@ const Blog = () => {
       <MainContainer
         id="page-wrap"
         menuOpen={menuOpen}
-        changedWidth={((windowDim.width - 300) / windowDim.width) * 100}
+        originalWidth={((windowDim.width - 36 * 2) / windowDim.width) * 100}
+        changedWidth={
+          ((windowDim.width - 300 - 36 * 2) / windowDim.width) * 100
+        }
       >
         <Title>Byungchan Lim</Title>
         <p>
@@ -47,7 +50,7 @@ const Blog = () => {
 
         <SubContainer>
           <TitleSub>About</TitleSub>
-          <p>
+          <p style={{ marginRight: 36 }}>
             Studying Computer Science, I specialize in frontend web and mobile
             development. As someone who is passionate about learning new things,
             I am deeply interested in machine learning and deep learning,

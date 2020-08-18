@@ -9,16 +9,17 @@ const Container = styled.div`
 
 const MainContainer = styled.div`
   text-align: center;
-  align-self: flex-end;
-  width: ${(props) => (props.menuOpen ? props.changedWidth + "%" : "100%")};
+  width: ${(props) =>
+    props.menuOpen ? props.changedWidth + "%" : props.originalWidth + "%"};
   position: absolute;
-  top: 36px;
-  left: 36px;
-  right: 36px;
+  margin-top: 36px;
+  padding-left: 36px;
+  padding-right: 36px;
 `;
 
 const SubContainer = styled.div`
   text-align: left;
+  margin-bottom: 50px;
 `;
 
 const Title = styled.h1`
