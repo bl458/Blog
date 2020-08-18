@@ -11,13 +11,10 @@ const Navbar = ({ handleMenuChange }) => (
     onStateChange={handleMenuChange}
     width={300}
   >
-    <a id="home" href="/">
-      Home
-    </a>
     <a id="about" href="/about">
       About
     </a>
-    <a id="about" href="/about">
+    <a id="about" href="/skills">
       Skills
     </a>
     <a id="contact" href="/contact">
